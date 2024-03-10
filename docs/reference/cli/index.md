@@ -2884,6 +2884,40 @@ validator-api-port: 5052
 
 The [validator REST API](../rest.md#enable-the-validator-client-api) listening port (HTTP). The default is 5052.
 
+### `validator-api-bearer-file`
+
+<Tabs>
+  <TabItem value="Syntax" label="Syntax" default>
+
+```bash
+--validator-api-bearer-file="/path/to/validator_api_bearer"
+```
+
+  </TabItem>
+  <TabItem value="Example" label="Example" >
+
+```bash
+--validator-api-bearer-file="/path/to/validator_api_bearer"
+```
+
+  </TabItem>
+  <TabItem value="Environment variable" label="Environment variable" >
+
+```bash
+TEKU_VALIDATOR_API_BEARER_FILE="/path/to/validator_api_bearer"
+```
+
+  </TabItem>
+  <TabItem value="Configuration file" label="Configuration file" >
+
+```bash
+validator-api-bearer-file: "/path/to/validator_api_bearer"
+```
+
+  </TabItem>
+</Tabs>
+
+The validator api bearer token file, which contains the password to use to access the [validator REST API](../rest.md#enable-the-validator-client-api). If not specified, the system will generate and store a default token.
 
 ### `validators-builder-registration-default-enabled`
 
